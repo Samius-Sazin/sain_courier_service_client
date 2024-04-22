@@ -1,0 +1,50 @@
+[
+    {
+        "serviceID": "01",
+        "name": "Regular Shipment",
+        "details": "Regular Shipment is a convenient option for sending packages that aren't time-sensitive but still require prompt delivery. With Regular Shipment, customers can schedule shipments to arrive at their destination the following day, providing a balance between speed and cost-effectiveness. This service is ideal for e-commerce businesses, retailers, and individuals who need reliable shipping solutions for their products.",
+        "image": "https://i.ibb.co/Pc81rKJ/regular-Shipping.webp",
+        "charge": "120 tk/kg",
+        "deliverySpeed": "3 to 7 days"
+    },
+    {
+        "serviceID": "02",
+        "name": "Fast Shipment",
+        "details": "Fast Shipment is a service that ensures your package reaches its destination as fast as possible. This service is especially valuable for urgent deliveries, such as legal documents, medical supplies, or last-minute gifts. Courier companies employ a network of drivers and logistics experts to ensure timely and efficient delivery. Customers can track their packages in real-time, providing peace of mind and transparency throughout the delivery process.",
+        "image": "https://i.ibb.co/t4P680C/fast-Shipping.jpg",
+        "charge": "280 tk/kg",
+        "deliverySpeed": "Within 48 hours"
+    },
+    {
+        "serviceID": "03",
+        "name": "International Shipping",
+        "details": "International shipping services enable businesses and individuals to send packages across borders seamlessly. Our companie specialize in navigating the complexities of international logistics, including customs clearance, import/export regulations, and international shipping documentation. By partnering with global carriers and leveraging their expertise in international trade, courier companies ensure that packages reach their destination countries efficiently and securely.",
+        "image": "https://i.ibb.co/sFxsmGw/international.jpg",
+        "charge": "9990 tk/kg",
+        "deliverySpeed": "5 to 15 days"
+    },
+    {
+        "serviceID": "04",
+        "name": "Special Handling",
+        "details": "Special handling services cater to shipments that require extra care and attention due to their fragile, perishable, or high-value nature. Our companie has trained professionals and specialized equipment to handle delicate items, such as artwork, electronics, pharmaceuticals, and perishable goods. From temperature-controlled storage facilities to secure packaging solutions, our companie takes every precaution to safeguard sensitive shipments during transit. Special handling services give customers peace of mind knowing that their valuable items are in capable hands throughout the delivery process.",
+        "image": "https://i.ibb.co/x35jzyN/specialitem.jpg",
+        "charge": "190 tk/kg",
+        "deliverySpeed": "3 to 7 days"
+    },
+    {
+        "serviceID": "05",
+        "name": "Warehousing and Fulfillment",
+        "details": "Warehousing and fulfillment services provide businesses with a comprehensive solution for storing inventory, processing orders, and fulfilling customer shipments. Our companie operate state-of-the-art warehouses equipped with advanced inventory management systems, allowing businesses to store their products securely and efficiently. From receiving and inspecting incoming shipments to picking, packing, and shipping orders, courier companies handle every aspect of the fulfillment process with precision and care. ",
+        "image": "https://i.ibb.co/r57MN81/warehouse.jpg",
+        "charge": "190 tk/kg for 1 week",
+        "deliverySpeed": "Not applicable"
+    },
+    {
+        "serviceID": "06",
+        "name": "Bulk Deliverie",
+        "details": "Bulk Deliverie service used to distributing products to multiple locations or sending out extensive documentation, these services are tailored to handle high-volume shipments effectively. From coordinating logistics to ensuring timely delivery, our companie streamline the process, allowing businesses to focus on their core operations while meeting their distribution requirements seamlessly.",
+        "image": "https://i.ibb.co/hRMLqn4/bulk.jpg",
+        "charge": "350 tk/kg",
+        "deliverySpeed": "3 to 7 days"
+    }
+]
