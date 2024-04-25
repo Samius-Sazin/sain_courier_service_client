@@ -168,7 +168,7 @@ function Services() {
 
             {/* show services */}
             <div>
-                {/* Our Service text with SVG from softr */}
+                {/* "Our Service" text with SVG from softr */}
                 <div className="flex justify-center">
                     <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="400" height="400">
                         <defs>
@@ -182,15 +182,23 @@ function Services() {
                     </svg>
                 </div>
 
-                <div className="flex justify-center">
-                    <div className="w-9/12">
-                        <div className="grid grid-cols-2 gap-5">
-                            {
-                                services.map(service => <ShowServices key={service._id} handleBookServiceButton={handleBookServiceButton} service={service} />)
-                            }
+                {/* services */}
+                {
+                    services.length > 0 ?
+                        <div className="flex justify-center" id="allServices">
+                            <div className="w-9/12">
+                                <div className="grid grid-cols-2 gap-5">
+                                    {
+                                        services.map(service => <ShowServices key={service._id} handleBookServiceButton={handleBookServiceButton} service={service} />)
+                                    }
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                        :
+                        <div className="flex justify-center">
+                            <span className="loading loading-spinner loading-lg text-info"></span>
+                        </div>
+                }
             </div>
         </div>
     )

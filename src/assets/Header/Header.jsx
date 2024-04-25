@@ -12,7 +12,6 @@ const Header = () => {
         signInUsingGoogle()
             .then(result => {
                 setUser(result.user);
-                console.log(result.user);
                 navigate('/services');
             })
             .catch(error => {
@@ -57,7 +56,7 @@ const Header = () => {
                         >My Orders</NavLink>
 
                         <NavLink
-                            to='/manage-orders'
+                            to='/manage-all-orders'
                             activeclassname="active"
                             style={{ wordSpacing: "-1px" }}
                             className="font-semibold text-lg me-5 hover:text-[#0089d4]"
@@ -86,6 +85,7 @@ const Header = () => {
                                 <img
                                     className="rounded-full w-10 hover:scale-110 transition-transform"
                                     src={user.photoURL}
+                                    alt="img"
                                 />
                                 <button
                                     className="font-semibold text-lg text-black ms-2 me-2 hover:text-[#0089d4]"

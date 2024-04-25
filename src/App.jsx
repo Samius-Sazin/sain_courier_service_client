@@ -8,6 +8,10 @@ import AuthMiddleware from "./assets/AuthMiddleware/AuthMiddleware";
 import BookService from "./assets/BookService/BookService";
 import AuthProvider from "./assets/Context/AuthProvider";
 import Register from "./assets/Register/Register";
+import MyOrders from "./assets/MyOrders/MyOrders";
+import AboutUs from "./assets/AboutUs/AboutUs";
+import ManageAllOrders from "./assets/ManageAllOrders/ManageAllOrders";
+import AddNewService from "./assets/AddNewService/AddNewService";
 
 function App() {
 
@@ -27,8 +31,12 @@ function App() {
 
             <Route element={<AuthMiddleware />} >
               <Route path='/book-service/:serviceID' element={<BookService />} />
+              <Route path="/my-orders" element={<MyOrders />} />
+              <Route path="/manage-all-orders" element={<ManageAllOrders />} />
+              <Route path="/add-new-service" element={<AddNewService />} />
             </Route>
 
+            <Route path="/about-us" element={<AboutUs />}/>
             <Route path='*' element={<PageNotFound />} />
           </Routes>
 

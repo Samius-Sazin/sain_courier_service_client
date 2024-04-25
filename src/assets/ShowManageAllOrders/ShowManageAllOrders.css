@@ -1,0 +1,4 @@
+.myGrid {
+    display: grid;
+    grid-template-columns: 1.8fr 3.5fr 3.5fr 1.4fr 1.8fr;
+}
