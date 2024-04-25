@@ -7,7 +7,7 @@ function AddNewService() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   
   const onSubmit = newService => {
-    fetch('http://localhost:5000/add-new-service', {
+    fetch('https://sain-courier-service-server.onrender.com/add-new-service', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'

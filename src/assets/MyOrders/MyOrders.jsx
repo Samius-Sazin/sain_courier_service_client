@@ -9,7 +9,7 @@ function MyOrders() {
   const [loading, setLoading] = useState(0);
 
   useEffect(() => {
-    fetch('http://localhost:5000/my-orders', {
+    fetch('https://sain-courier-service-server.onrender.com/my-orders', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
@@ -28,7 +28,7 @@ function MyOrders() {
       const remainingMyOrders = myOrders.filter(myOrder => myOrder._id != id);
       setMyorders(remainingMyOrders);
 
-      fetch('http://localhost:5000/orders/delete', {
+      fetch('https://sain-courier-service-server.onrender.com/orders/delete', {
         method: "DELETE",
         headers: {
           'Content-Type': 'application/json'

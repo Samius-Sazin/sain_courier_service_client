@@ -12,7 +12,7 @@ function BookService() {
 
   //for fetch data
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${id}`)
+    fetch(`https://sain-courier-service-server.onrender.com/services/${id}`)
       .then(response => response.json())
       .then(data => {
         setService(data);
@@ -42,7 +42,7 @@ function BookService() {
     data.time = service?.deliverySpeed;
     data.serviceImage = service?.image;
 
-    fetch(`http://localhost:5000/book-service`, {
+    fetch(`https://sain-courier-service-server.onrender.com/book-service`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'

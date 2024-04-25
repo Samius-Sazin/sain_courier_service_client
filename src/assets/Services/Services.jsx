@@ -6,7 +6,7 @@ function Services() {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services`)
+        fetch(`https://sain-courier-service-server.onrender.com/services`)
             .then(response => response.json())
             .then(data => {
                 setServices(data);

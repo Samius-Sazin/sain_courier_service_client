@@ -6,7 +6,7 @@ function ManageAllOrders() {
     const [loading, setLoading] = useState(0);
 
     useEffect(() => {
-        fetch('http://localhost:5000/manage-all-orders')
+        fetch('https://sain-courier-service-server.onrender.com/manage-all-orders')
             .then(response => response.json())
             .then(data => {
                 setAllOrders(data);
@@ -19,7 +19,7 @@ function ManageAllOrders() {
             const remainingAllOrders = allOrders.filter(allOrder => allOrder._id != id);
             setAllOrders(remainingAllOrders);
 
-            fetch('http://localhost:5000/orders/delete', {
+            fetch('https://sain-courier-service-server.onrender.com/orders/delete', {
                 method: "DELETE",
                 headers: {
                     'Content-Type': 'application/json'
