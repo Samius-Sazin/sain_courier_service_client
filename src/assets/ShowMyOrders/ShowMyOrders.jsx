@@ -36,7 +36,7 @@ function ShowMyOrders(props) {
             <div className='flex items-center justify-center'>
                 <button
                     onClick={() => props.handleCancelService(_id)}
-                    className='px-8 py-3 bg-[#008dda] rounded-lg text-white font-semibold hover:text-black'
+                    className='px-6 py-3 bg-[#008dda] rounded-lg text-white font-semibold hover:text-black'
                 >Cancel Service</button>
             </div>
         </div>

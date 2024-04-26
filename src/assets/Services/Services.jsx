@@ -31,7 +31,7 @@ function Services() {
             <div className="py-20 px-20 bg-[#008dda] mb-32">
                 <div className="flex justify-around items-center">
                     <div className="text-black">
-                        <h2 className="text-5xl font-bold mb-3 tracking-tight">PParcel Delivered</h2>
+                        <h2 className="text-5xl font-bold mb-3 tracking-tight">Parcel Delivered</h2>
                         <h2 className="text-5xl font-bold mb-5 tracking-tight">On Time with no Hassle</h2>
                         <p className="tracking-wide">Easily track your courier, Get courier within hours. Efficient & safe delivery.</p>
                         <button onClick={handleBecomeAmerchantButton} className="px-8 py-3 mt-10 rounded-lg font-semibold text-[17px] text-[#008dda] bg-white hover:text-black tracking-tight">BECOME A MERCHANT</button>
