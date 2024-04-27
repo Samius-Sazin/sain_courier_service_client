@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import './ShowManageAllOrders.css';
 
 function ShowManageAllOrders(props) {
-    const { userName, userEmail, parcelName, parcelWeight, serviceImage, serviceName, time, totalCost, from, destination, _id } = props.allOrder;
+    const { bookedAt, userName, userEmail, parcelName, parcelWeight, serviceImage, serviceName, time, totalCost, from, destination, _id } = props.allOrder;
 
     return (
         <div className='myGrid mb-5 px-5 py-3 rounded-lg' style={{ boxShadow: "0px 0px 5px 4px #dddddd" }}>
@@ -30,8 +30,10 @@ function ShowManageAllOrders(props) {
             </div>
 
             <div className='flex flex-col justify-center item-center'>
-                <h2 className='text-sm'>Status</h2>
+                <h2 className='text-xs'>Status</h2>
                 <h2 className='font-semibold text-lg text-[#008dda]'>In Progress</h2>
+                <h2 className='text-xs'>Booking date</h2>
+                <h2 className='font-semibold text-lg text-[#008dda]'>{bookedAt.slice(0, 10)}</h2>
             </div>
 
             <div className='flex items-center justify-center'>
