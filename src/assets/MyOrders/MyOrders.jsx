@@ -1,22 +1,31 @@
 import React, { useEffect, useState } from 'react'
 import useAuth from '../Context/useAuth'
 import ShowMyOrders from '../ShowMyOrders/ShowMyOrders';
-import { set } from 'firebase/database';
+import { useNavigate } from 'react-router-dom';
 
 function MyOrders() {
   const { user } = useAuth();
   const [myOrders, setMyorders] = useState([]);
   const [loading, setLoading] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('https://sain-courier-service-server.onrender.com/my-orders', {
       method: "POST",
       headers: {
+        'authorization': `Bearer ${localStorage.getItem('idToken')}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({ userEmail: user?.email })
     })
-      .then(response => response.json())
+      .then(response => {
+        if (response.status === 200) {
+          return response.json();
+        }
+        else if (response.status === 401) {
+          navigate('/register');
+        }
+      })
       .then(data => {
         setMyorders(data);
         setLoading(1);
